@@ -7,7 +7,7 @@ function Menu() {
 
   return (
     <>
-      <div>
+      <div className="divide-y px-2 divide-stone-200">
         {menu.map((pizza) => {
           return <MenuItem key={pizza.id} pizza={pizza} />;
         })}

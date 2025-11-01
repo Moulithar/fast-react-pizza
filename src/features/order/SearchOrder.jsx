@@ -22,6 +22,7 @@ const SearchOrder = () => {
         placeholder="Search order"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
+        className="w-24 md:w-48 p-1 md:p-2 md:focus:w-64  rounded-full transition-all duration-300 placeholder:text-stone-100  focus:ring ring-lime-400 "
       />
     </form>
   );

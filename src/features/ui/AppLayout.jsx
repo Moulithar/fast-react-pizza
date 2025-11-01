@@ -16,10 +16,10 @@ const AppLayout = () => {
   }, [navigation.state]);
 
   return (
-    <div>
+    <div className="grid grid-rows-[auto_1fr_auto] h-screen">
       {isLoading && <Loader /> }
       <Header />
-      <main>
+      <main className="overflow-y-auto">
         <Outlet />
       </main>
       <CartOverview />
